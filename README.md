@@ -11,7 +11,9 @@ leetcode
     └── slidingWindow
     │   └── [Medium] MinimumSizeSubarrayTest.java
     └── matrix
-    │   └── [Medium] ValidSudokuTest.java    
+    │   └── [Medium] ValidSudokuTest.java
+    └── hashMap
+    │   └── [Easy] RansomNoteTest.java    
 
 ```
 
