@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import org.junit.jupiter.api.Test;
 
 /*
-* https://leetcode.com/problems/merge-sorted-array/description/?envType=study-plan-v2&envId=top-interview-150
+https://leetcode.com/problems/merge-sorted-array/description/?envType=study-plan-v2&envId=top-interview-150
 */
 public class MergeSortedArrayTest {
 
@@ -45,14 +45,10 @@ public class MergeSortedArrayTest {
     }
 
     private int[] merge(int[] nums1, int m, int[] nums2, int n) {
-        for(int i = 0; i < m + n; i++) {
-            if (i < m) {
-                continue;
-            } else {
-                nums1[i] = nums2[i-m];
-            }
-            System.out.println(nums1[i]);
+        for(int i = m; i < m + n; i++) {
+            nums1[i] = nums2[i-m];
         }
+
         Arrays.sort(nums1);
 
         return nums1;
@@ -80,7 +76,6 @@ public class MergeSortedArrayTest {
             k--;
         }
 
-        // Handle remaining elements from nums2
         while (j >= 0) {
             nums1[k] = nums2[j];
             j--;

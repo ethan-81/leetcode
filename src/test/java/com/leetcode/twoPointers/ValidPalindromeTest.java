@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
 
 /*
- * https://leetcode.com/problems/valid-palindrome/description/?envType=study-plan-v2&envId=top-interview-150
+ https://leetcode.com/problems/valid-palindrome/description/?envType=study-plan-v2&envId=top-interview-150
  */
 public class ValidPalindromeTest {
 
@@ -52,6 +52,7 @@ public class ValidPalindromeTest {
         return result;
     }
 
+    // 좌우 양끝에서 유효한 문자만 비교 하는 방법
     boolean solution(String s) {
         if (s.isEmpty()) {
             return true;
@@ -63,6 +64,8 @@ public class ValidPalindromeTest {
         while(start <= last) {
             char currFirst = s.charAt(start);
             char currLast = s.charAt(last);
+
+            // 정규식으로 특수문자를 제거하는 것보다 각 문자가 특수문자인지 판단하는게 더 빠른 듯
             if (!Character.isLetterOrDigit(currFirst )) {
                 start++;
             } else if(!Character.isLetterOrDigit(currLast)) {
