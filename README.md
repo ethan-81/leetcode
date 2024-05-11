@@ -15,7 +15,9 @@ leetcode
     └── hashMap
     │   └── [Easy] RansomNoteTest.java
     └── intervals
-    │   └── [Easy] SummaryRangesTest.java  
+    │   └── [Easy] SummaryRangesTest.java 
+    └── stack
+    │   └── [Easy] ValidParenthesesTest.java  
 
 ```
 
