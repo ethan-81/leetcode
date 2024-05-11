@@ -13,7 +13,9 @@ leetcode
     └── matrix
     │   └── [Medium] ValidSudokuTest.java
     └── hashMap
-    │   └── [Easy] RansomNoteTest.java    
+    │   └── [Easy] RansomNoteTest.java
+    └── intervals
+    │   └── [Easy] SummaryRangesTest.java  
 
 ```
 
